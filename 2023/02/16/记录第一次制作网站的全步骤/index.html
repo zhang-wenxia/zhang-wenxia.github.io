@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="c:/Users/win10/hexo-blog/source_posts/images/网站结构.png">
 <meta property="article:published_time" content="2023-02-16T10:58:09.000Z">
-<meta property="article:modified_time" content="2023-02-16T11:02:20.941Z">
+<meta property="article:modified_time" content="2023-02-16T11:09:06.965Z">
 <meta property="article:author" content="雯异">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -326,18 +326,18 @@
             
               <div class="markdown-body">
                 
-                <h3 id="1-设计网站外观"><a href="#1-设计网站外观" class="headerlink" title="1. 设计网站外观"></a>1. 设计网站外观</h3><p>在编写代码之前进行规划和设计工作这是必须的。包括“网站提供什么信息？”、“想要什么字体和颜色？”、“网站是做什么的？”</p>
-<h5 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h5><p>首先，考虑以下问题并写出你的想法：<br><strong>网站的主题？</strong>我想做一个个人资源整合的网站，取名为个人杂货铺。<br><strong>主题要展示的信息？</strong>网站的首页应该有一个标题，小段介绍，有注册登录按钮，还有图片。<br><strong>网站的外观？</strong>背景颜色用浅绿，字体用正式的。<br>更复杂的项目需要更详细的指引，参见：<a target="_blank" rel="noopener" href="https://design.firefox.com/photon/">Firefox Photon Design System</a></p>
-<h5 id="绘制草图"><a href="#绘制草图" class="headerlink" title="绘制草图"></a>绘制草图</h5><p>先从一张粗略的草图开始设计，再使用图形编辑器或 Web 技术建立数字模拟图。</p>
-<h5 id="选定内容"><a href="#选定内容" class="headerlink" title="选定内容"></a>选定内容</h5><p>撰写文本内容<br>挑选主题颜色<br>找到合适图片<br>选择一种字体</p>
-<h3 id="2-处理文件"><a href="#2-处理文件" class="headerlink" title="2. 处理文件"></a>2. 处理文件</h3><p>我们需要在计算机上为网站建立一个合理的文件结构，以确保文件之间交互畅通，并在你最终将它们上传到服务器之前使你的所有内容看起来正确。</p>
+                <h1 id="1-设计网站外观"><a href="#1-设计网站外观" class="headerlink" title="1. 设计网站外观"></a>1. 设计网站外观</h1><p>在编写代码之前进行规划和设计工作这是必须的。包括“网站提供什么信息？”、“想要什么字体和颜色？”、“网站是做什么的？”</p>
+<h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3><p>首先，考虑以下问题并写出你的想法：<br><strong>网站的主题？</strong>我想做一个个人资源整合的网站，取名为个人杂货铺。<br><strong>主题要展示的信息？</strong>网站的首页应该有一个标题，小段介绍，有注册登录按钮，还有图片。<br><strong>网站的外观？</strong>背景颜色用浅绿，字体用正式的。<br>更复杂的项目需要更详细的指引，参见：<a target="_blank" rel="noopener" href="https://design.firefox.com/photon/">Firefox Photon Design System</a></p>
+<h3 id="绘制草图"><a href="#绘制草图" class="headerlink" title="绘制草图"></a>绘制草图</h3><p>先从一张粗略的草图开始设计，再使用图形编辑器或 Web 技术建立数字模拟图。</p>
+<h3 id="选定内容"><a href="#选定内容" class="headerlink" title="选定内容"></a>选定内容</h3><p>撰写文本内容<br>挑选主题颜色<br>找到合适图片<br>选择一种字体</p>
+<h1 id="2-处理文件"><a href="#2-处理文件" class="headerlink" title="2. 处理文件"></a>2. 处理文件</h1><p>我们需要在计算机上为网站建立一个合理的文件结构，以确保文件之间交互畅通，并在你最终将它们上传到服务器之前使你的所有内容看起来正确。</p>
 <p>在我们创建的任何网站项目中，最常见的是一个主页 HTML 文件和包含图像、样式文件和脚本文件的文件夹。<br><img src="C:\Users\win10\hexo-blog\source_posts\images\网站结构.png" srcset="/img/loading.gif" lazyload alt="网站结构"><br>其中index.html这个文件一般包含主页内容，也就是网站的首页。images文件夹包含网站上使用的所有图片。styles文件夹包含用于设置内容样式的CSS代码。scripts文件夹包含所有用于向网站添加交互功能的JavaScript代码。</p>
-<h5 id="文件路径问题"><a href="#文件路径问题" class="headerlink" title="文件路径问题"></a>文件路径问题</h5><ul>
+<h3 id="文件路径问题"><a href="#文件路径问题" class="headerlink" title="文件路径问题"></a>文件路径问题</h3><ul>
 <li>引用的目标文件与HTML文件同级，例如，xxx.jpg和index.html都位于personal-grocery-store文件夹下，则路径直接写成<code>xxx.jpg</code></li>
 <li>引用的目标文件位于 HTML 文件的下级，例如，xxx.jpg位于images文件夹下，则路径为<code>images/xxx.jpg</code></li>
 <li>引用的目标文件位于 HTML 文件的上级，例如，index.html位于personal-grocery-store的一个子文件夹内，而xxx.jpg位于personal-grocery-store，则路径可以写成<code>../xxx.jpg</code></li>
 </ul>
-<h3 id="3-发布网站"><a href="#3-发布网站" class="headerlink" title="3. 发布网站"></a>3. 发布网站</h3>
+<h1 id="3-发布网站"><a href="#3-发布网站" class="headerlink" title="3. 发布网站"></a>3. 发布网站</h1>
                 
               </div>
             
